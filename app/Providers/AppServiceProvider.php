@@ -2,7 +2,10 @@
 
 namespace App\Providers;
 
+use Illuminate\Database\Eloquent\Model;
+use Illuminate\Support\Facades\Route;
 use Illuminate\Support\ServiceProvider;
+use Livewire\Livewire;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -19,6 +22,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot(): void
     {
-        //
+        Livewire::setUpdateRoute(function ($handle) {
+            return Route::post('/sulbarkms/livewire/update', $handle);
+        });
+
+        Model::shouldBeStrict(!$this->app->isProduction());
     }
 }
