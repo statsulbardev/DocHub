@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Http\Middleware;
+namespace BookStack\Http\Middleware;
 
 use Illuminate\Http\Middleware\TrustHosts as Middleware;
 
@@ -9,9 +9,9 @@ class TrustHosts extends Middleware
     /**
      * Get the host patterns that should be trusted.
      *
-     * @return array<int, string|null>
+     * @return array
      */
-    public function hosts(): array
+    public function hosts()
     {
         return [
             $this->allSubdomainsOfApplicationUrl(),
