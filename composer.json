@@ -1,6 +1,6 @@
 {
-    "name": "bookstackapp/bookstack",
-    "description": "BookStack documentation platform",
+    "name": "bookstackapp/dochub",
+    "description": "Platform dokumentasi BPS Provinsi Sulawesi Barat",
     "keywords": [
         "BookStack",
         "Documentation"
