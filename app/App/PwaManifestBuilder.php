@@ -29,22 +29,22 @@ class PwaManifestBuilder
             "orientation" => "portrait",
             "icons" => [
                 [
-                    "src" => setting('app-icon-32') ?: url('/icon-32.png'),
+                    "src" => setting('app-icon-32') ?: url('/public/icon-32.png'),
                     "sizes" => "32x32",
                     "type" => "image/png"
                 ],
                 [
-                    "src" => setting('app-icon-64') ?: url('/icon-64.png'),
+                    "src" => setting('app-icon-64') ?: url('/public/icon-64.png'),
                     "sizes" => "64x64",
                     "type" => "image/png"
                 ],
                 [
-                    "src" => setting('app-icon-128') ?: url('/icon-128.png'),
+                    "src" => setting('app-icon-128') ?: url('/public/icon-128.png'),
                     "sizes" => "128x128",
                     "type" => "image/png"
                 ],
                 [
-                    "src" => setting('app-icon-180') ?: url('/icon-180.png'),
+                    "src" => setting('app-icon-180') ?: url('/public/icon-180.png'),
                     "sizes" => "180x180",
                     "type" => "image/png"
                 ],
