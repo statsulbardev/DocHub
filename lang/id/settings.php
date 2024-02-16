@@ -205,7 +205,7 @@ return [
     'users_none_selected' => 'Tidak ada pengguna yang dipilih',
     'users_edit' => 'Edit Pengguna',
     'users_edit_profile' => 'Edit Profil',
-    'users_avatar' => 'Abatar Pengguna',
+    'users_avatar' => 'Avatar Pengguna',
     'users_avatar_desc' => 'Pilih gambar untuk mewakili pengguna ini. berukuran 256px.',
     'users_preferred_language' => 'Bahasa Pilihan',
     'users_preferred_language_desc' => 'Opsi ini akan mengubah bahasa yang digunakan untuk antarmuka pengguna aplikasi. Ini tidak akan memengaruhi konten yang dibuat pengguna.',

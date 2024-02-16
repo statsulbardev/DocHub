@@ -140,6 +140,8 @@ class UserController extends Controller
             'email'            => ['min:2', 'email', 'unique:users,email,' . $id],
             'password'         => ['required_with:password_confirm', Password::default()],
             'password-confirm' => ['same:password', 'required_with:password'],
+            'bps_id'           => ['min:9', 'max:9'],
+            'employee_id'      => ['min:18', 'max:18'],
             'language'         => ['string', 'max:15', 'alpha_dash'],
             'roles'            => ['array'],
             'roles.*'          => ['integer'],

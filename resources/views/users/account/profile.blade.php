@@ -43,6 +43,30 @@
                     @endif
                 </div>
 
+                <div>
+                    <div class="flex-container-row gap-l items-center wrap">
+                        <div class="flex">
+                            <label class="setting-list-label" for="bps_id">{{ trans('auth.bps_id') }}</label>
+                            <p class="text-small mb-none">{{ trans('preferences.profile_bps_id_description') }}</p>
+                        </div>
+                        <div class="flex stretch-inputs">
+                            @include('form.text', ['name' => 'bps_id'])
+                        </div>
+                    </div>
+                </div>
+
+                <div>
+                    <div class="flex-container-row gap-l items-center wrap">
+                        <div class="flex">
+                            <label class="setting-list-label" for="employee_id">{{ trans('auth.employee_id') }}</label>
+                            <p class="text-small mb-none">{{ trans('preferences.profile_employee_id_description') }}</p>
+                        </div>
+                        <div class="flex stretch-inputs">
+                            @include('form.text', ['name' => 'employee_id'])
+                        </div>
+                    </div>
+                </div>
+
                 <div class="grid half gap-xl">
                     <div>
                         <label for="user-avatar"

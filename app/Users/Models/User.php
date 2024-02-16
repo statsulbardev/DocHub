@@ -36,6 +36,8 @@ use Illuminate\Support\Collection;
  * @property string     $name
  * @property string     $slug
  * @property string     $email
+ * @property string     $bps_id
+ * @property string     $employee_id
  * @property string     $password
  * @property Carbon     $created_at
  * @property Carbon     $updated_at

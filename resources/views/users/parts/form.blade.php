@@ -22,6 +22,18 @@
                 @include('form.text', ['name' => 'email', 'disabled' => !userCan('users-manage')])
             @endif
         </div>
+        {{--
+            TODO:
+            - fungsi trans adalah bawaan laravel yang berfungsi mentranslate bahasa sesuai konfigurasi lang yang dibuat
+        --}}
+        <div>
+            <label for="bps_id">{{ trans('auth.bps_id') }}</label>
+            @include('form.text', ['name' => 'bps_id'])
+        </div>
+        <div>
+            <label for="employee_id">{{ trans('auth.employee_id') }}</label>
+            @include('form.text', ['name' => 'employee_id'])
+        </div>
     </div>
     <div>
         <div class="form-group collapsible mb-none" component="collapsible" id="external-auth-field">

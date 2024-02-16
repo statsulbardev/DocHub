@@ -115,6 +115,14 @@ class UserRepo
             $user->email = $data['email'];
         }
 
+        if(!empty($data['bps_id'])) {
+            $user->bps_id = $data['bps_id'];
+        }
+
+        if(!empty($data['employee_id'])) {
+            $user->employee_id = $data['employee_id'];
+        }
+
         if (!empty($data['external_auth_id']) && $manageUsersAllowed) {
             $user->external_auth_id = $data['external_auth_id'];
         }

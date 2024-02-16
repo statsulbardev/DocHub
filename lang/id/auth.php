@@ -19,6 +19,8 @@ return [
     'name' => 'Nama',
     'username' => 'Nama Pengguna',
     'email' => 'Email',
+    'bps_id' => 'NIP BPS',
+    'employee_id' => 'NIP Pegawai',
     'password' => 'Kata Sandi',
     'password_confirm' => 'Konfirmasi Kata Sandi',
     'password_hint' => 'Harus minimal 8 karakter',
